@@ -20,8 +20,15 @@ public class TestException {
     }
 
     public void exception2(){
-        Thread.sleep(l:3000);
-        
+    try
+    {
+        Thread.sleep(3000);
     }
+    catch(InterruptedException e)
+    {
+        e.printStackTrace();
+    }
+    System.out.println("Hello Thread");
+}
 
 }
